@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 
-type IconProps = {
+interface IconProps{
   icon: string;
   url?: string;
 };

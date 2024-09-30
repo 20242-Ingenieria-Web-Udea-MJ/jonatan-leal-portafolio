@@ -1,3 +1,4 @@
+import { text } from "stream/consumers";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: "#FFB400",
+        gray: "#767676",
       },
     },
   },
