@@ -1,16 +1,5 @@
-import Image from "next/image";
 import localFont from "next/font/local";
-import ProgressBar from "@/components/atoms/progressBars/index";
-import { IconSocial, IconCard } from "@/components/atoms/icons/index";
-import {
-  TitlePrincipal,
-  TitleSecondary,
-  TextPrincipal,
-} from "@/components/atoms/texts";
-import DurationLabel from "@/components/atoms/durationLabel/index";
-import KnowledgeCard from "@/components/molecules/knowledgeCard";
-
-import EducationCard from "@/components/molecules/educationCard";
+import { CentralSide, LeftSide, RightSide } from "@/components/templates/index";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,30 +12,23 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+/**
+ * The root component for the home page.
+ *
+ * This component renders the main content for the home page, which includes the
+ * left, central and right sides of the page. The left side contains the
+ * personal information. The central side contains the main information, such as
+ * the knowledge and education info. The right side contains the social media
+ * links.
+ *
+ * @returns {React.ReactElement} The rendered Home component.
+ */
 export default function Home() {
   return (
-    <div>
-      <h1>Hola desde Next</h1>
-      <button className="bg-primary rounded w-40 h-12">Hire me</button>
-      <TitlePrincipal title="Title Principal"/>
-      <TitleSecondary title="Title Secondary"/>
-      <TitleSecondary title="Title Secondary" />
-      <TextPrincipal text="Text Principal"/>
-
-      <ProgressBar percentage={80} label="HTML" />
-      <IconSocial icon="mdi:github" url="https://github.com/jonaleal" />
-      <IconCard icon="tabler:device-desktop-code" />
-      <DurationLabel initial="2022-01-01" final="2022-12-31" />
-
-      <KnowledgeCard icon="mdi:github" title="Title" text="This is a text" />
-
-      <EducationCard
-        title1="Title1"
-        initial="2022-01-01"
-        final="2022-12-31"
-        title2="Title2"
-        description="This is a text"
-      />
-    </div>
+    <main className="flex min-h-screen flex-col gap-2 lg:flex-row">
+      <LeftSide />
+      <CentralSide />
+      <RightSide />
+    </main>
   );
 }
