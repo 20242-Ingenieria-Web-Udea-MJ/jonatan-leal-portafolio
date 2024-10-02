@@ -1,4 +1,3 @@
-import localFont from "next/font/local";
 import { CentralSide, LeftSide, RightSide } from "@/components/templates/index";
 
 /**
