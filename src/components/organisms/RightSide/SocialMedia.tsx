@@ -20,8 +20,8 @@ const SocialMedia = () => {
   return (
     <>
       {socialMedia.map((social) => (
-        <div className="p-1">
-          <SocialMediaIcon key={social.icon} {...social} />
+        <div className="p-1" key={social.icon}>
+          <SocialMediaIcon {...social} />
         </div>
       ))}
     </>
