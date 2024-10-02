@@ -1,6 +1,5 @@
-import React from 'react'
-import SocialMediaIcon from '@/components/molecules/SocialMediaIcon'
-
+import React from "react";
+import SocialMediaIcon from "@/components/molecules/SocialMediaIcon";
 
 /**
  * A component that renders a list of social media icons.
@@ -10,18 +9,23 @@ import SocialMediaIcon from '@/components/molecules/SocialMediaIcon'
  * @returns {React.ReactElement} The rendered list of social media icons.
  */
 const SocialMedia = () => {
+  const socialMedia = [
+    {
+      icon: "mdi:linkedin",
+      link: "https://www.linkedin.com/in/jonatan-leal-9a92451a2",
+    },
+    { icon: "mdi:github", link: "https://github.com/jonaleal" },
+  ];
+
   return (
     <>
-      <SocialMediaIcon
-        icon="mdi:linkedin"
-        link="https://www.linkedin.com/in/jonatan-leal-9a92451a2"
-      />
-      <SocialMediaIcon
-        icon="mdi:github"
-        link="https://github.com/jonaleal"
-      />
+      {socialMedia.map((social) => (
+        <div className="p-1">
+          <SocialMediaIcon key={social.icon} {...social} />
+        </div>
+      ))}
     </>
-  )
-}
+  );
+};
 
-export default SocialMedia
+export default SocialMedia;

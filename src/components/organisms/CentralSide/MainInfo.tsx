@@ -5,11 +5,6 @@ import Button from "@/components/atoms/Button";
 import Image from "@/components/atoms/Image";
 import PopUp from "@/components/molecules/PopUp";
 
-
-
-
-
-
 /**
  * The main information section of the page.
  *
@@ -52,11 +47,7 @@ const MainInfo = () => {
         <PopUp
           open={open}
           closeModal={() => setOpen(false)}
-          text="I love backend development and cloud technologies. 
-        I enjoy creating efficient and scalable systems, and keeping up to date with the latest technological 
-        developments is very important in my daily life. I like teamwork since listening to the 
-        ideas of others enriches me in both technical and social knowledge. 
-        Likewise, autonomous learning is a skill that I possess in my daily academic life."
+          text="I'm highly interested in backend development and web development. Building systems that are both efficient and scalable is something I truly enjoy, and I make it a point to stay informed about new tech trends. I appreciate working with others, as hearing different perspectives enriches my knowledge. Also, I thrive on self-directed learning, which I actively incorporate into my studies."
         >
           <div className="flex justify-center py-4">
             <Button
@@ -69,11 +60,7 @@ const MainInfo = () => {
         </PopUp>
       </section>
       <section className="flex w-fit items-end justify-center">
-        <Image
-          src="/photo.png"
-          alt="Jonatan Leal"
-          classes="hidden lg:block"
-        />
+        <Image src="/photo.png" alt="Jonatan Leal" classes="hidden lg:block" />
       </section>
     </main>
   );
