@@ -14,11 +14,11 @@ const SocialMedia = () => {
     <>
       <SocialMediaIcon
         icon="mdi:linkedin"
-        link="#"
+        link="https://www.linkedin.com/in/jonatan-leal-9a92451a2"
       />
       <SocialMediaIcon
         icon="mdi:github"
-        link="#"
+        link="https://github.com/jonaleal"
       />
     </>
   )

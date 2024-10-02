@@ -32,7 +32,7 @@ yarn dev
 
 4. Abre tu navegador y navega a `http://localhost:3000`.
 
-## Tecnologías Utilizadas 🧰
+## Tecnologías Utilizadas
 
 - **Next.ts**: Framework de React para aplicaciones web.
 - **Tailwind CSS**: Framework de CSS para diseño responsivo.
